@@ -30,7 +30,7 @@ public class Demo4 {
                 int y=a-z;
             
                 while(y-->0){
-                    if(y==1){System.out.printf("%2$s%3$s%3$s%1$s%1$s%2$s" ,"/ ","+ ","\\ ");break;}
+                    if(y==1){System.out.printf("%2$s%1$s%1$s%3$s%3$s%2$s" ,"/ ","+ ","\\ ");break;}
                     else if(y==3){System.out.printf("%2$s%2$s%3$s%1$s%2$s%2$s" ,"/ ","+ ","\\ ");break;}
                     else if(y==5){System.out.printf("%2$s%2$s%2$s%2$s%2$s%2$s" ,"/ ","+ ");break;}
                 }
