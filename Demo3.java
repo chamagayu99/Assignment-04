@@ -18,17 +18,22 @@ public class Demo3 {
             else if(count==6) z=1;
             else if(count==7) z=0;
 
-            if(x>3){
+            if(x>3 || x==3){
             int y=a-z;
             
                 while(y-->0){
-                   System.out.printf("+ ");
+                    if(y==1){System.out.printf("%2$s%1$s%1$s%1$s%1$s%1$s%2$s" ,"  ","+ ");break;}
+                    if(y==3){System.out.printf("%2$s%2$s%1$s%1$s%1$s%2$s%2$s" ,"  ","+ ");break;}
+                    else if(y==5){System.out.printf("%2$s%2$s%2$s%1$s%2$s%2$s%2$s" ,"  ","+ ");break;}
+                    else if(y==6){System.out.printf("%s%1$s%1$s%1$s%1$s%1$s%1$s" ,"+ ");break;}
                 }
-            }else if(x==3 || x<3){
+            }else if( x<3){
                 int y=a-z;
             
                 while(y-->0){
-                   System.out.printf("+ ");
+                    if(y==3){System.out.printf("%2$s%2$s%1$s%1$s%1$s%2$s%2$s" ,"  ","+ ");break;}
+                    else if(y==5){System.out.printf("%2$s%2$s%2$s%1$s%2$s%2$s%2$s" ,"  ","+ ");break;}
+                    else if(y==6){System.out.printf("%s%1$s%1$s%1$s%1$s%1$s%1$s" ,"+ ");break;}
                 }
             }
             
